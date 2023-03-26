@@ -11,10 +11,16 @@ body{
 #header{
     font-family: monospace;
     color: lawngreen;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,-50%);
+    animation: blink 0.8s;
+    animation-iteration-count: infinite;
 }
 
 
-#minus, #add, #x,#one, #two, #three, #four, #five, #six,#seven, #eight, #nine{
+#minus, #add, #x,#one, #two, #three, #four, #five, #six,#seven, #eight, #nine,#zero,#sign,#divison{
    outline: none;
     font-family: monospace;
     font-size: 20px;
@@ -22,7 +28,42 @@ body{
  
 
 }
+#sing{
+    width: 120%;
+}
 #result{
     font-family: monospace;
     color: lawngreen;
+}
+
+#divison{
+    margin-left: 6%;
+}
+
+
+#calc-button,#clr-button{
+    outline: none;
+    font-family: monospace;
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+#calc-button{
+    margin-left: 3%;
+}
+
+.all{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes blink{
+    0%{
+        size: 0%;
+    }
+    100%{
+        size: 100%;
+    }
 }
