@@ -3,11 +3,15 @@ const result = document.querySelector("#result")
 
 let number1
 let operator
+let changedisplay 
 
 function numberButton(number){
-   if(result.textContent == "result" || result.textContent == "cleared!"){
+   if(result.textContent == "result" || result.textContent == "cleared!" || changedisplay){
      result.textContent = ""
      result.textContent += number
+     if(changedisplay){
+        changedisplay = false
+     }
    }else{
     result.textContent += number
    }
@@ -63,4 +67,6 @@ if(op == "-"){
  }
  
   result.textContent = String(intresult)
+  changedisplay = true
+
 }

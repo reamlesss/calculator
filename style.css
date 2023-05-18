@@ -34,6 +34,7 @@ body{
 #result{
     font-family: monospace;
     color: lawngreen;
+    font-size: 20px;
 }
 
 #divison{
@@ -67,3 +68,4 @@ body{
         size: 100%;
     }
 }
+
