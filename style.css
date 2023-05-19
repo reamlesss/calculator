@@ -7,13 +7,14 @@ body{
 .buttons-base{
     display: flexbox;
     flex-direction: column;
+    
 }
 #header{
     font-family: monospace;
     color: lawngreen;
     position: absolute;
     left: 50%;
-    top: 15%;
+    top: 30%;
     transform: translate(-50%,-50%);
     animation: blink 0.8s;
     animation-iteration-count: infinite;
